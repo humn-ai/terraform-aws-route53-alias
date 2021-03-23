@@ -1,3 +1,7 @@
+# -----------------------------------------------------------------------------
+# OUTPUTS: TF-MOD-AWS-ROUTE53-ALIAS
+# -----------------------------------------------------------------------------
+
 output "hostnames" {
   value       = aws_route53_record.default.*.fqdn
   description = "List of DNS records"
